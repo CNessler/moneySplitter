@@ -3,7 +3,7 @@ exports.splitter = function(total, count){
     count = 3;
   }
   var totalSplit = splitTotal(total, count);
-  return validateTotal(totalSplit, Math.round(total*100), count);
+  return validateTotal(totalSplit, Math.round(total*100), count); //done due to floating point numbers
 }
 
 function splitTotal(total, count) {
