@@ -5,19 +5,22 @@ block content
   script(src='https://code.jquery.com/jquery-2.1.4.min.js')
   script(src='javascripts/dom.js')
   div.container
-    if errors
-      each err in errors
-        span= err
-    form.center.width(action='/calculate' method='post')
+    div
+      img(src='https://safr.kingfeatures.com/idn/cnfeed/zone/js/content.php?file=aHR0cDovL3NhZnIua2luZ2ZlYXR1cmVzLmNvbS9IYWdhclRoZUhvcnJpYmxlLzIwMTMvMTIvSGFnYXJfVGhlX0hvcnJpYmxlLjIwMTMxMjA0XzkwMC5naWY=')
+    div.calculate  
+      if errors
+        each err in errors
+          span= err
+      form.center.width(action='/calculate' method='post')
+        div.row.pad
+          input.form-control(type="text" id="totalAmount" name="totalAmount" placeholder="Bill Total")
+        div.row.pad
+          input.form-control(type="number" id="splitCount" name="splitCount" placeholder="Amount of People Splitting")
+        div.row.pad
+          input(type='submit' value="Calculate" class="btn btn-primary")
       div.row.pad
-        input.form-control(type="text" id="totalAmount" name="totalAmount" placeholder="Bill Total")
-      div.row.pad
-        input.form-control(type="number" id="splitCount" name="splitCount" placeholder="Amount of People Splitting")
-      div.row.pad
-        input(type='submit' value="Calculate" class="btn btn-primary")
-    div.row.pad
-      if amountToPay
-        each amt in amountToPay
-          span.border= amt
+        if amountToPay
+          each amt in amountToPay
+            span.border= amt
                             
             

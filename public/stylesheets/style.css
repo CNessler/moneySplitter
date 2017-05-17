@@ -1,5 +1,5 @@
 body {
-  background-image: url('http://blog.formstack.com/wp-content/uploads/2012/09/math-formula-chalkboard-600x350.jpg');
+  background-image: url('http://www.thecollegesolution.com/wp-content/uploads/2013/11/math-chalkboard.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -13,27 +13,33 @@ body {
 }
 
 .border {
-  border-style: solid;
-  border-width: .1px;
   margin: 15px;
-  padding: 4px;
+  padding: 8px;
+  background-color: #ffffcc;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+.caclulate {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 20px;
 }
 
 .container {
   text-align: center;
   margin: 0 auto;
-  border-radius: 3px;
-  margin-top: 200px;
-  width: 20%;
-  padding: 150px;
-  background-color: white;
+  margin: 110px;
 }
 
 .center {
   text-align: center;
   color: #141301;
-  font-size: 20px;
+  font-size: 40px;
   margin: 0 auto;
+  padding: 50px;
 }
 
 .width {
