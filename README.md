@@ -8,4 +8,5 @@ moneySplitter allows a user to figure out the amount each person owes when split
 - Javascript
 - Mocha
 - Express
-- NodeJS 
+- NodeJS
+- Jade

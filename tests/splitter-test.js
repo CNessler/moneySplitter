@@ -41,25 +41,25 @@ describe('moneySplitter', function() {
 });
 
 describe('moneySplitter', function() {
-  it('moneySplitter() should return [140,140,140,140,140] if 700.0 is passed in and divided amongst five people', function() {
+  it('moneySplitter() should return [.29,.29,.27] if .85 is passed in and divided amongst three people', function() {
     expect(splitter.splitter(.85, 3)).deep.equal([.29,.29,.27]);
   });
 });
 
 describe('moneySplitter', function() {
-  it('moneySplitter() should return [140,140,140,140,140] if 700.0 is passed in and divided amongst five people', function() {
+  it('moneySplitter() should return [-1.29,-1.29,-1.27] if -3.85 is passed in and divided amongst three people', function() {
     expect(splitter.splitter(-3.85, 3)).deep.equal([-1.29,-1.29,-1.27]);
   });
 });
 
 describe('moneySplitter', function() {
-  it('moneySplitter() should return [140,140,140,140,140] if 700.0 is passed in and divided amongst five people', function() {
+  it('moneySplitter() should return [.04,.04] if .08 is passed in and divided amongst two people', function() {
     expect(splitter.splitter(.08, 2)).deep.equal([.04,.04]);
   });
 });
 
 describe('moneySplitter', function() {
-  it('moneySplitter() should return [140,140,140,140,140] if 700.0 is passed in and divided amongst five people', function() {
+  it('moneySplitter() should return [.15,.15,.15,.13] if .58 is passed in and divided amongst four people', function() {
     expect(splitter.splitter(.58, 4)).deep.equal([.15,.15,.15,.13]);
   });
 });
