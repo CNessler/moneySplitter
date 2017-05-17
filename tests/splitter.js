@@ -1,21 +1,21 @@
-exports.splitter = function(total, splitCount){
-  if (splitCount == null || splitCount == undefined) {
-    splitCount = 3;
+exports.splitter = function(total, count){
+  if (count == null || count == undefined) {
+    count = 3;
   }
-  var totalSplit = splitTotal(total, splitCount);
-  return validateTotal(totalSplit, Math.round(total*100), splitCount);
+  var totalSplit = splitTotal(total, count);
+  return validateTotal(totalSplit, Math.round(total*100), count);
 }
 
-function splitTotal(total, splitCount) {
-  var splitValue = (total/splitCount).toFixed(2);
+function splitTotal(total, count) {
+  var splitValue = (total/count).toFixed(2);
   var splitValueArray = [];
-  while (splitValueArray.length < splitCount) {
+  while (splitValueArray.length < count) {
     splitValueArray.push(splitValue);
   }
   return splitValueArray;
 };
 
-function validateTotal(totalSplit, originalAmount, splitCount) {
+function validateTotal(totalSplit, originalAmount, count) {
   var total = 0;
   var totalSplitValues = [];
   for (var i=0; i<totalSplit.length;i++) {

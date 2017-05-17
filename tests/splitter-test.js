@@ -21,7 +21,7 @@ describe('moneySplitter', function() {
   });
 });
 
-//splitter test including amount to split by
+//splitTotal test including amount to split by
 // describe('moneySplitter', function() {
 //   it('moneySplitter() should return [266.66,266.66,266.68] if 800.0 split 3 ways is passed in', function() {
 //     expect(splitter.splitter(800.0, 3)).deep.equal([266.67,266.67,266.67]);
